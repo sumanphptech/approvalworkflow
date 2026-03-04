@@ -23,6 +23,15 @@
   * Non-approvers cannot approve/reject
   * Approvers dispatch the job on approve/reject
 
+## Database Setup
+
+* Run the following commands after cloning the repository to prepare the database:
+
+  * `bash`
+  * php artisan migrate
+  * php artisan db:seed --class=RoleTableSeeder
+  * php artisan db:seed --class=UserTableSeeder
+
 ## Trade-offs
 
 * No real notifications; logging is used for async follow-up.
